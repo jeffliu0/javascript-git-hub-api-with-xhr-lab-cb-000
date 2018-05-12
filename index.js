@@ -3,6 +3,7 @@ function getRepositories(){
   req.addEventListener("submit", showRepositories)
   req.open("GET", "https://api.github.com/users/jeffliu0/repos")
   req.send()
+  alert(req.status)
 }
 
 function showRepositories(event,data){
