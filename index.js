@@ -1,6 +1,6 @@
 function getRepositories(){
   const req = new XMLHttpRequest()
-  req.addEventListener("load", showRepositories)
+  alert(req.addEventListener("load", showRepositories))
   req.open("GET", 'https://api.github.com/users/jeffliu0/repos')
   req.send()
 }
